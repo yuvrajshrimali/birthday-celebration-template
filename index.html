@@ -19,6 +19,15 @@
   <body>
     <div id="root"></div>
     
+    <script>
+window.addEventListener("load", function(){
+  const text = document.body.innerHTML;
+  if(text.includes("Memories")){
+    document.body.innerHTML = document.body.innerHTML.replace(/Memories[\s\S]*/,'');
+  }
+});
+</script>
+    
     <audio autoplay loop>
   <source src="./music.mp3" type="audio/mpeg">
 </audio>
